@@ -1,0 +1,8 @@
+{
+    "name": "polymer-rows",
+    "private": true,
+    "dependencies": {
+        "polymer": "polymer/polymer#^1.6.1",
+        "iron-ajax": "polymerelements/iron-ajax#^1.4.3"
+    }
+}

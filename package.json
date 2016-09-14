@@ -1,0 +1,14 @@
+{
+  "name": "polymer-rows",
+  "version": "1.0.0",
+  "description": "polymer rows example",
+  "scripts": {
+    "start": "http-server --cors"
+  },
+  "keywords": [],
+  "author": "dominik kaspar",
+  "license": "ICL",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}

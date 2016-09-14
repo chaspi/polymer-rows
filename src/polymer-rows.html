@@ -1,0 +1,26 @@
+<link rel="import" href="../bower_components/polymer/polymer.html" />
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<dom-module id="polymer-rows">
+    <template>
+        <style>
+            /* local DOM styles go here */
+            :host {
+                display: inline-block;
+            }
+        </style>
+
+        <!-- local DOM goes here -->
+        <iron-ajax auto url="http://localhost:8080/backend/resources/rows"
+            handle-as="json" last-response="{{ajaxResponse}}"></iron-ajax>
+
+        <template is="dom-repeat" items="[[ajaxResponse]]">
+            <div>[[item.first]] -> [[item.last]]</div>
+        </template>
+
+    </template>
+    <script>
+        Polymer({
+            is: 'polymer-rows',
+        });
+    </script>
+</dom-module>
